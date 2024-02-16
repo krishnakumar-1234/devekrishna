@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="freeCodeCamp Accessibility Quiz practice project" />
+    <title>a web developer</title>
+    <link
+    href="https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+  />
+  <link rel="icon" sizes="192x192" href="All imgs of web/IMG_8416.jpeg" type="image/svg+xml">
+</head>
+    <body>
+            <header class="This_is_heading">
+                <nav class="container_for_heading">
+                    <ul>
+                        <li><a href="#first_section">ABOUT</a></li>
+                        <li><a href="#second_section">WORK</a></li>
+                        <li><a href="#third_section">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </header>
+             <section id="first_section" role="region" aria-labelledby="About-web">
+                <div class="content_heading">
+                    <h1>
+                        Hey I am Krishna
+                    </h1>
+                    <p>
+                        a web developer
+                    </p>
+                </div>
+            </section>
+            <section id="second_section" role="region" aria-labelledby="work-web">
+                <div class="porjcts_title">
+                    <h1>
+                        These are some of my projects
+                    </h1>
+                </div>
+                <div class="conatiner_for_projrcts">
+                    <div class="bu_pr">
+                    <div class="project"><img src="All imgs of web/Accessibility Quiz.PNG" alt=""></div>
+                    <a href="All html links/Accessibility Quiz.html"><button class="button">Accessibility Quiz</button></a>
+                </div>
+
+                <div class="bu_pr">
+                    <div class="project"><img src="All imgs of web/Balance Sheet.png" alt=""></div>
+                   <a href="All html links/Balance Sheet.html"><button class="button">Balance Sheet</button></a>
+                </div>
+
+                <div class="bu_pr">
+                    <div class="project"><img src="All imgs of web/Dr. Norman Borlaug.pnf.png" alt=""></div>
+                   <a href="All html links/Dr. Norman Borlaug.html"> <button class="button">Norman Borlaug</button></a>
+                </div>
+        
+                
+                <div class="bu_pr">
+                    <div class="project"><img src="All imgs of web/CAMPER CAFE.PNG" alt=""></div>
+                   <a href="All html links/CAMPER CAFE.html"> <button class="button">CAMPER CAFE</button></a>
+                </div>
+
+                <div class="bu_pr">
+                    <div class="project"><img src="All imgs of web/light.PNG" alt=""></div>
+                   <a href="All html links/light.html"> <button class="button">light</button></a>
+                </div>
+
+                <div class="bu_pr">
+                    <div class="project"><img src="All imgs of web/flex-box.png" alt=""></div>
+                   <a href="All html links/flex-box.html"> <button class="button">flex-box</button></a>
+                </div>
+                
+                </div>
+                <div class="showl_all_button"><div></div><button>Show all =</button></div>
+            </section>
+            <section id="third_section" role="region" aria-labelledby="contact-web">
+                <div class="footer_titile_heading">
+                    <h1>
+                        Let's work together...
+                    </h1>
+                    <p>
+                        How do you take your coffee?
+                    </p>
+                </div>
+                <div class="contact_us">
+                <div class="icons_follow">
+                    <a href="#"> <i class="fab fa-facebook-f"> facebook</i></a>
+                    <a href="#"> <i class="fab fa-twitter"> Twitter</i></a>
+                    <a href="#"> <i class="fab fa-instagram"> Instagram</i></a>
+                    <a href="#"> <i class="fab fa-linkedin-in"> Linkedin</i></a>
+                    <a href="#"> <i class="fab fa-linkedin-in"> Linkedin</i></a>
+                    <a href="https://www.youtube.com/channel/UCkC3qpApHidFIKFQl3G8qyw"> <i class="fab fa-youtube"> Youtube</i></a>
+                 </div>
+                </div>
+                 <div class="bottom_tittle">
+                    <p>&hearts; This is krishna project and made by krishna kumar</p>
+                 </div>
+            </section>
+            <!-- This is tool section of body -->
+            <div id="tool" class="tool"><p id="flag">🏳️</p></div>
+            <div id="tools" class="tools"><p id="cut">&times;</p></div>
+            
+            <div id="five">
+                <div><i class="fab fa-facebook-f"></i></div>
+                <div><i class="fab fa-twitter"></i></div>
+                <div><i class="fab fa-instagram"></i></div>
+                <div><i class="fab fa-linkedin-in"></i></div>
+                <div><i class="fab fa-youtube"></i></div>
+            </div>
+            <!-- Theend tool section of body -->
+
+
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+            box-sizing: border-box;
+
+        }
+
+        body{
+            background-color: black;
+        }
+    
+
+        /* 1. ----------------------------------------------------------------------------------------------------------------------------------------------------- */
+        /* This is heading section for website */
+        .This_is_heading{
+            width: 100%;
+            height: 72px;
+            background-color:#be3144;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            position: fixed;
+     
+        }
+        ul{
+            display: flex;
+            list-style: none;
+  
+        }
+        li a{
+            color: white;
+            text-decoration: none;
+            margin-right: 25px;
+            font-size: 20px;
+            font-family: cursive;
+            font-style: italic;
+            transition-duration: 1s;
+        }
+        li a:hover{
+            color: black;
+        }
+
+        /* The end this is heading section for website */
+        /* 1.----------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+        /* 2.----------------------------------------------------------------------------------------------------------------------------------------------------- */
+        /* This is titile heading section for web */
+        #first_section{
+            width: 100%;
+            height: 600px;
+            /* background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%); */
+            /* background-image: url(This\ is\ random\ images/); */
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: #00000085;
+            background-position: center;
+            padding-top: 75px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        .content_heading{
+            text-align: center;
+            color: white;
+
+        }
+        .content_heading h1{
+            font-size: 50px;
+            font-family: sans-serif;
+            padding-bottom: 15px;
+            
+
+        }
+        .content_heading p{
+            color: #be3144;
+            font-size: 25px;
+            font-family: fantasy;
+        }
+
+        .conatiner_for_projrcts{
+            width: 100%;
+            margin-top: 100px;
+            text-align: center;
+        }
+        .bu_pr{
+            display:inline-block;
+            padding: 20px;
+        }
+
+        .button{
+            width: 300px;
+            height: 50px;
+            background-color: #303841;
+            border-color: #303841;
+            border-radius: 4px;
+            font-family:    fantasy;
+            color: white;
+            font-size: 20px;
+            transition-duration: 0.50s;
+            cursor: pointer;
+            box-shadow: 0px 2px 1px 1px #303841;
+        }
+        .button:hover{
+            background-color: #be3144;
+            /* box-shadow: 0px 2px 0px 3px #be3144; */
+            border-color: #be3144;
+            transform: rotatex(40deg);
+        }
+        .project{
+            width: 300px;
+            height: 350px;
+            background-color: #0ca216;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        .project img{
+            width: 300px;
+            height: 350px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            cursor:zoom-in;
+            transition-duration: 1s;
+            
+        }
+        .project img:active{
+            transform: scale(1.30);
+            border: 2px solid rgb(77, 210, 20);
+
+        }
+        /* This is titile heading section for web  */
+        /* 2.----------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+        /* 3.----------------------------------------------------------------------------------------------------------------------------------------------------- */
+        /* This is projects section of web and its content */
+        #second_section{
+            width: 100%;
+            height: 1400px;
+            background-color: #45567d;
+        }
+        @media (max-width:1027px) {
+            #second_section{
+                height: 1800px;
+            }
+        }
+        @media (max-width:682px) {
+            #second_section{
+                height: 3100px;
+            }
+        }
+
+        .porjcts_title{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+            font-family: sans-serif;
+            font-weight: 100;
+            padding-top: 70px;
+            text-align: center;
+        }
+
+        .showl_all_button{
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+        }
+        .showl_all_button button{
+            width: 200px;
+            height: 50px;
+            background-color: #303841;
+            border-color: #303841;
+            border-radius: 4px;
+            font-family: sans-serif;
+            color: white;
+            font-size: 20px;
+            transition-duration: 0.50s;
+      
+        }
+        .showl_all_button button:hover{
+             background-color: #be3144;
+                border-color: #be3144;
+            transform: scale(1.1);
+            
+        }
+        .showl_all_button div{
+            width: 10px;
+            height: 50px;
+            background-color:#ffffffa6;
+            text-align: center;
+            position: relative;
+            left: 11px;
+            animation-name: sighn;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            z-index: -10;
+
+
+        }
+        @keyframes sighn {
+            0%{
+                transform: translate(0);
+         
+       
+            }
+
+            50%{
+                transform: translate(180px);
+                opacity: 0;
+            }
+            
+        }
+        /* The end this is is projects section of web and its content */
+        /* 3.----------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+        /* 4.----------------------------------------------------------------------------------------------------------------------------------------------------- */
+        /* This is contact section of web and its content */
+        #third_section{
+            width: 100%;
+            height:600px;
+            background-color: #303841;  
+            background-position: left;
+            /* background-size: contain; */
+            background-repeat: no-repeat;
+            background-image: url(This\ is\ random\ images/unnamed.gif);          
+        }
+
+        .footer_titile_heading{
+            color: white;
+            text-align: center;
+            margin-bottom: 40px;
+
+        }
+        .footer_titile_heading h1{
+            font-size: 50px;
+            padding-top: 160px;
+            font-family: sans-serif;
+
+        }
+        .footer_titile_heading p{
+            font-size: 20px;
+            font-family:fantasy;
+            color: #be3144;
+            padding: 30px;
+        }
+
+        .contact_us{
+            width: 100%;
+            height: 70px;
+            display: flex;
+            margin-bottom: 10px;
+            align-items: center;
+            justify-content: center;
+
+            justify-content: space-evenly;
+
+
+        }
+        .icons_follow{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+            height: fit-content;
+            transition-property: all;
+
+
+
+        }
+        .icons_follow a{
+            color: white;
+            font-size: 25px;
+            margin-top: 15px;
+            text-decoration: none;
+            transition-property: all;
+            transition-duration: 0.10s;
+            
+            
+        
+        }
+        .icons_follow i{
+            padding: 22px;
+    
+            
+        }
+
+        .icons_follow a:hover{
+            transform: translatey(20px);
+
+       
+   
+        
+        }
+
+        .bottom_tittle{
+            font-size: 20px;
+            color: #ffffff;
+            margin-top: 138px;
+            padding-top: 10px;
+            font-family: cursive;
+            text-align: center;
+            background-color: #303841;
+            border-top: 2px solid rgba(20, 20, 20, 0.255);
+        }
+        @media (max-width:513px) {.third_section{height: 700px;}}
+        /* The end this is contact section of web and its content */
+        /* 4.----------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+        /* 5.----------------------------------------------------------------------------------------------------------------------------------------------------- */
+        /* This is tool section of css */
+        #five{
+            width: 80px;
+            height: 300px;
+            display: flex;
+            position: fixed;
+            right: 2.50%;
+            bottom: 24%;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-evenly;
+            border-top: 2px solid rgb(36, 36, 36);
+            border-left: 2px solid rgb(36, 36, 36);
+            border-right: 2px solid rgb(36, 36, 36);
+            border-radius: 100px;
+            animation-name: five;
+            display: none;
+            animation-duration: 0.60s;
+            animation-iteration-count: calc(1);
+         }
+         @media (max-width: 800px) {
+            #five{
+                right: 3.60px;
+                bottom: 25%;
+            }
+         }
+         @keyframes five {
+            0%{
+                height: 0;
+            }
+            100%{
+                height: 300px;
+            }
+         }
+        #five div{
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1em;
+            color: white;
+            cursor: pointer;
+            border-radius: 100%;
+            background-color: rgb(255, 0, 0);
+
+        }
+
+        @keyframes fives {
+            0%{
+                width: 0;
+            }
+            100%{
+                
+                width: 300px;
+            }
+         }
+         .tool{
+            width: 62px;
+            height: 62px;
+            position: fixed;
+            bottom: 15%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            right: 3%;
+            color: white;
+            font-size: 2em;
+            border-radius: 100%;
+            cursor: pointer;
+            animation-name: tool-moving;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            background-color: rgb(255, 0, 0);
+        }
+        @keyframes tool-moving {
+            0%{
+               
+            }
+
+            100%{
+               
+               
+                
+            }
+            
+        }
+
+        .tool img{
+            width: 100%;
+            border-radius: 100%;
+
+        }
+        
+        #cut{
+            animation-name: cut;
+            animation-duration: 2s;
+            
+        }
+        @keyframes cut {
+            0%{
+                position: relative;
+                left: 100px;
+                opacity: 0;
+                transform: rotate(360deg);
+            }
+            100%{
+                position: relative;
+                left: 0px;
+                opacity: 1;
+            }
+        }
+        .tools{
+            width: 62px;
+            height: 62px;
+            position: fixed;
+            bottom: 15%;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            right: 3%;
+            color: white;
+            font-size: 2em;
+            border-radius: 100%;
+            cursor: pointer;
+            background-color: rgba(238, 32, 32, 0.38);
+        }
+        /* the end tool section of css */
+        /* 5.----------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+     
+    </style> 
+
+<script>
+document.getElementById('tool').addEventListener('click', function(){
+    console.log("This is opne tab of tool");
+    document.getElementById('tool').style.display = 'none';
+    document.getElementById('tools').style.display = 'flex';
+    document.getElementById('flag').style.display = 'none';
+    document.getElementById('five').style.display = 'flex';
+  
+})
+document.getElementById('tools').addEventListener('click', () =>{
+    console.log("This is opne tab of tool off");
+   document.getElementById('five').style.display = 'none';
+   document.getElementById('tool').style.display = 'flex';
+   document.getElementById('flag').style.display = 'block';
+   document.getElementById('tools').style.display = 'none';
+
+})
+</script>
+   </body>
+</html>
