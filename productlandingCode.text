@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Build a Product Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <!-- This is header for  -->
+    <header id="header">
+        <img id="header-img" src="https://i.pinimg.com/originals/6f/0d/26/6f0d267b2164a0a32c94f4d9d36c6bdb.jpg" alt="logo">
+        <nav id="nav-bar">
+          <ul>
+            <li><a class="nav-link" href="#about_section">ABOUT</a></li>
+            <li><a class="nav-link" href="#video_section">WORK</a></li>
+            <li><a class="nav-link" href="#form_section">CANTACT</a></li>
+          </ul>
+        </nav>
+    </header>
+    <!-- The end header of  -->
+
+    <!-- This is video section-->
+    <section id="video_section">
+    <iframe id="video" width="80%" height="587" src="https://www.youtube.com/embed/eMhkTJfrkaY" title="Fanta cold drink banner Design #photoshop  #design #graphicdesign  #photos #adobe #lightroom #india" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </section>
+    <!-- The end video section -->
+
+        <!-- This is form section -->
+    <section id="form_section">
+      <h1>Get your Premium </h1>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input type="email" id="email" placeholder="enter your eamil address" name="email" required>
+     <input id="submit" type="submit">   
+      </form>
+    </section>
+    <!-- The end form section -->
+
+
+    <!-- This is about section of ewb -->
+<section id="about_section">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis amet dolores itaque 
+<h1></h1>
+</section>
+
+<style>
+    *{
+  margin: 0;
+  padding: 0;
+}
+/* This is header of css */
+#header{
+  width: 100%;
+  height: 70px;
+display: flex;
+align-items: center;
+background-color: white;
+position: fixed;
+top: 0;
+}
+#header > img{
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+}
+#header ul{
+display: flex;
+align-items: center;
+list-style: none;
+justify-content: space-evenly;
+}
+li > a{
+  text-decoration: none;
+  color: black;
+  padding: 15px; 
+  font-family: sans-serif;
+}
+/* The end css of hrader */
+
+/* This is video section of css*/
+#video_section{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* The end video section of css */
+
+/* This is form_section of css */
+#form_section{
+text-align: center;
+margin-bottom: 100px;
+}
+#form_section > h1{
+  font-size: 30px;
+  font-family: sans-serif;
+  margin: 30px;
+}
+#email{
+  width: 30%;
+  height: 25px;
+}
+#submit{
+  width: 15%;
+  height: 26px;
+  color: black;
+  background-color: chocolate;
+  border-radius: 4px;
+  border-color: chocolate;
+  box-shadow: 1px 1px 0 0 black;
+  cursor: pointer;
+}
+/* The end form section of css */
+
+/* This is about section */
+#about_section{
+  width:100%;
+  height: 50px;
+  display: flex;
+justify-content: center;
+background-color: gray;
+align-items: center;
+}
+
+
+
+@media (max-width : 500px){
+#header{
+  background-color: black;
+  
+}
+li > a{
+  color: white;
+}
+}
+</style>
+  </body>
+</html>
