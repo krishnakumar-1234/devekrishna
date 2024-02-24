@@ -36,7 +36,7 @@ function WhatIaTopicOne() {
     // This is Content Changer From javaScript.
     CommunityContetn[0].innerHTML = `<p class="CommunityContetn"><abbr>▷</abbr>JS FullForm is JavaScript.</p>`;
     CommunityContetn[1].innerHTML = `<p class="CommunityContetn"><abbr>▷</abbr>js is a programing language we use it to give instraction to the computer.</p>`;
-    CommunityContetn[2].innerHTML = `<p class="CommunityContetn"><abbr>▷</abbr>JavaScript provides eight different data types .</p>`;
+    CommunityContetn[2].innerHTML = `<p class="CommunityContetn"><abbr>▷</abbr>JavaScript provides eight different data types .</p>`;
     CommunityContetn[3].innerHTML = `<p class="CommunityContetn"><abbr>▷</abbr>At the very high level, there are two types of data types in javascript</p>`;
     CommunityContetn[4].innerHTML = `<p class="CommunityContetn"><abbr>▷</abbr> 1. Primitive data types:  2. Reference data types:</p>`;
 
@@ -122,7 +122,7 @@ const CloseSecond = document.getElementById('CloseSecond');
 const ProjecstName = document.getElementById('ProjecstName');
 
 
-console.log(VeiwCode)
+
 
 VeiwProjects.forEach(VeiwProjects => {
     VeiwProjects.addEventListener('click', () => {
@@ -205,3 +205,9 @@ VeiwCode[4].addEventListener('click', () => {
 
     IframeForProjects.src = "landingCode.text";
 })
+
+const logos = document.getElementById("logo");
+setTimeout(() => {
+    logos.src = "setTimeOut.png";
+   
+}, 3000);
